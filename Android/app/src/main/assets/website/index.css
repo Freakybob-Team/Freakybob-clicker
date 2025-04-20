@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4d501;
+    color: #bdca02;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #776607;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#shop {
+    width: 300px;
+    background-color: #a008ad;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(10, 10, 0, 0.5);
+    margin-right: 20px;
+}
+
+#click-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#clicker {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://freakybob-team.github.io/Freakybob-clicker/freaky.webp');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 2px solid #01b4eb;
+    border-radius: 50%;
+}
+
+#stats, #achievements {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4a6f8c;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+}
+
+button:hover:not(.disabled) {
+    background-color: #3a537a;
+}
+
+button.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+button.enabled {
+    background-color: #4a6f8c;
+    cursor: pointer;
+}
+
+#achievements p {
+    background-color: #2a3c5d;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out-right {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.achievement {
+    background-color: #2a3c5d;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: white;
+    animation: slide-in-right 0.5s forwards;
+}
+
+.achievement.out {
+    animation: slide-out-right 0.5s forwards;
+}

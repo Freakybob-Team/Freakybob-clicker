@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FreakybobClicker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#e4d501</item>
+        <item name="colorPrimaryVariant">#e4d501</item>
+        <item name="colorOnPrimary">#e4d501</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">#e4d501</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#e4d501</item>
+        <item name="android:navigationBarColor">#e4d501</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

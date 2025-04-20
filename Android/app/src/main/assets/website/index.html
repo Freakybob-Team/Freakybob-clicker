@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Freakybob Clicker</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <audio id="click-sound" src="https://github.com/5quirre1/Freakybob.site/raw/main/i%E2%80%99m-spongebob-made-with-Voicemod.mp3"></audio>
+        <div id="container">
+            <div id="shop">
+                <h2>Shop</h2>
+                <button id="buy-autoclicker" class="disabled">Buy Autoclicker (100 clicks)</button>
+                <button id="buy-freakystar" class="disabled">Buy Freaky Star (300 clicks)</button>
+                <h3>Upgrades</h3>
+                <button id="buy-multiplier-1" class="disabled">1+ Clicks Multiplier (15 clicks)</button>
+                <button id="buy-multiplier-8" class="disabled">8+ Clicks Multiplier (120 clicks)</button>
+            </div>
+            <div id="click-area">
+                <div id="clicker"></div>
+                <div id="stats">
+                    <p>Clicks: <span id="click-count">0</span></p>
+                    <p>Clicks Per Second: <span id="clicks-per-second">0</span></p>
+                </div>
+                <div id="achievements">
+                    <h2>Achievements</h2>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
